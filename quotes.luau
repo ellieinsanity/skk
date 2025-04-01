@@ -1,4 +1,4 @@
-quotes = {
+local quotes = {
 	"Textcode.dll STILL NOT DETECTED, BYPASSES HYPERION ✅✅✅ NO AMDXX64.DLL ✅✅✅",
 	"free btool hack: replicatesignal(game.Players.LocalPlayer.Character.Humanoid.ServerEquipTool, workspace.Baseplate)",
 	"where is a serverside script that is compatible with delta and it shows on the cloud icon and does work■I can't find any serverside that works",
@@ -83,3 +83,5 @@ quotes = {
 	"A lot changes in 4 years.",
 	"Hatsune Miku died on a leek for you, defend her death, she defeated your sins, she did this for you, and gave us holy music.",
 }
+
+return quotes
