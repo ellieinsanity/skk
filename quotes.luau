@@ -3,6 +3,7 @@ local quotes = {
 	"free btool hack: replicatesignal(game.Players.LocalPlayer.Character.Humanoid.ServerEquipTool, workspace.Baseplate)",
 	"where is a serverside script that is compatible with delta and it shows on the cloud icon and does work■I can't find any serverside that works",
 	"TextBox",
+	"Ok Exspliot dude ☠",
 	--"can somekne help me get hac",
 	"do u have a \"to\" cmd?",
 	"infinite yield is not working in this game i think",
