@@ -4,6 +4,7 @@ local quotes = {
 	"where is a serverside script that is compatible with delta and it shows on the cloud icon and does work■I can't find any serverside that works",
 	"TextBox",
 	"Ok Exspliot dude ☠",
+	"I brb ima equip a fe",
 	--"can somekne help me get hac",
 	"do u have a \"to\" cmd?",
 	"infinite yield is not working in this game i think",
