@@ -6,6 +6,7 @@ local quotes = {
 	"Ok Exspliot dude ☠",
 	"I brb ima equip a fe",
 	"dude i use a 10.00 exec",
+	"do you even have infinite yield",
 	--"can somekne help me get hac",
 	"do u have a \"to\" cmd?",
 	"infinite yield is not working in this game i think",
