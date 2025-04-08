@@ -10,6 +10,7 @@ local quotes = {
 	"do you even have infinite yield",
 	--"can somekne help me get hac",
 	"do u have a \"to\" cmd?",
+	"why are no esp or aimbot loadstrings working:?",
 	"infinite yield is not working in this game i think",
 	"Gooner game 💀💀💀💀",
 	"GFJIJK YF ABU",
