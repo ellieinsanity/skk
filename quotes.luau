@@ -1,5 +1,4 @@
 local quotes = {
-	
 	"Textcode.dll STILL NOT DETECTED, BYPASSES HYPERION ✅✅✅ NO AMDXX64.DLL ✅✅✅",
 	"free btool: replicatesignal(game.Players.LocalPlayer.Character.Humanoid.ServerEquipTool, workspace.Baseplate)",
 	"where is a serverside script that is compatible with delta and it shows on the cloud icon and does work■I can't find any serverside that works",
