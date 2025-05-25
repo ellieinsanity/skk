@@ -1,4 +1,4 @@
-local skkVersion = "0.2"
+local skkVersion = "0.3"
 local start = tick()
 
 local players = game:GetService("Players")
@@ -512,7 +512,7 @@ addCommand("rejoin", function(context)
 	if (getgenv().scriptName) then
 		queueonteleport(([[repeat task.wait() until game:IsLoaded(); loadstring(game:HttpGet("http://localhost:90/SelfGames/%s.lua"))()]]):format(getgenv().scriptName))
 	else
-		queueonteleport([[repeat task.wait() until game:IsLoaded(); https://raw.githubusercontent.com/ellieinsanity/skk/refs/heads/main/admin.lua]])
+		queueonteleport([[repeat task.wait() until game:IsLoaded(); loadstring(game:HttpGet("https://raw.githubusercontent.com/ellieinsanity/skk/refs/heads/main/admin.lua"))()]])
 	end
 	teleportService:TeleportToPlaceInstance(game.PlaceId, game.JobId, localPlayer)
 end, { aliases = {"rj"} })
