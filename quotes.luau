@@ -1,5 +1,5 @@
 local quotes = {
-	"Bro is working at sybau 😭😭",
+	"Bro is working at sy bau 😭😭",
 	"i wanna know lua but I'm more into roblox",
 	"Textcode.dll STILL NOT DETECTED, BYPASSES HYPERION ✅✅✅ NO AMDXX64.DLL ✅✅✅",
 	"free btool: replicatesignal(game.Players.LocalPlayer.Character.Humanoid.ServerEquipTool, workspace.Baseplate)",
