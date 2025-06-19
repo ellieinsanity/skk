@@ -1,6 +1,6 @@
 local quotes = {
 	"Bro is working at sy bau 😭😭",
-	"REPLACED IN THE SCRIPT",
+	"someone server side the game",
 	"Your safety matters. Not feeling comfortable? You can block or report this person anytime from their profile.",
 	"Textcode.dll STILL NOT DETECTED, BYPASSES HYPERION ✅✅✅ NO AMDXX64.DLL ✅✅✅",
 	"free btool: replicatesignal(game.Players.LocalPlayer.Character.Humanoid.ServerEquipTool, workspace.Baseplate)",
