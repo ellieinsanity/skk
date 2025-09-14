@@ -1,4 +1,5 @@
 local quotes = {
+	"Zesty Ah exploiters",
 	"Bro is working at sy bau 😭😭",
 	"someone server side the game",
 	"bro■your larping knowledge",
