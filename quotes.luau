@@ -1,4 +1,6 @@
 local quotes = {
+	"i just sayed whats on my schoolmates clothes",
+	"i just got more land in the universe ☠☠☠☠☠☠",
 	"Zesty Ah exploiters",
 	"Ayyy good one Ellie",
 	"Bro is working at sy bau 😭😭",
