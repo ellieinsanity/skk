@@ -2,6 +2,7 @@ local quotes = {
 	"i just sayed whats on my schoolmates clothes",
 	"i just got more land in the universe ☠☠☠☠☠☠",
 	"Zesty Ah exploiters",
+	"The game abt me and your mum",
 	"Ayyy good one Ellie",
 	"Bro is working at sy bau 😭😭",
 	"someone server side the game",
