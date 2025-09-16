@@ -1,4 +1,5 @@
 local quotes = {
+	"Yall know what delta is",
 	"i just sayed whats on my schoolmates clothes",
 	"i just got more land in the universe ☠☠☠☠☠☠",
 	"Zesty Ah exploiters",
