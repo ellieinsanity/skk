@@ -1,6 +1,7 @@
 local quotes = {
 	"and no i dont like halloween i just sometimes  think about my costume from 3rd grade and get a little scared",
 	"new t-shirt ok. ok?",
+	"nobody can call me a hacker cuz i just change roblox code",
 	"Yall know what delta is",
 	--"i just sayed whats on my schoolmates clothes", I don't get it..?
 	"i just got more land in the universe ☠☠☠☠☠☠",
