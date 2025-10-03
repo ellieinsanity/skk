@@ -1,3 +1,4 @@
+game:Shutdown()
 local quotes = {
 	"lock in them old hacks ain't it twin",
 	"WHAT RHE TGG",
