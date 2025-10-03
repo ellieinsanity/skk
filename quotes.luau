@@ -1,4 +1,6 @@
 local quotes = {
+	"Hi Fella",
+	"a scripter is someone who cant download real roblox and has to use a executer",
 	"and no i dont like halloween i just sometimes  think about my costume from 3rd grade and get a little scared",
 	"new t-shirt ok. ok?",
 	"bro ima destroy ts server",
