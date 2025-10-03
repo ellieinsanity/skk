@@ -4,6 +4,7 @@ local quotes = {
 	"bro ima destroy ts server",
 	"TIME TO CLAP TS SERVER",
 	"time to crash ts sh■/crash",
+	"ts servercooked",
 	"i dont even know how people hack guns into the floor",
 	"nobody can call me a hacker cuz i just change roblox code",
 	"Yall know what delta is",
