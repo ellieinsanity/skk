@@ -1,6 +1,7 @@
 local quotes = {
 	"lock in them old hacks ain't it twin",
 	"WHAT RHE TGG",
+	"AYO HUZ",
 	"afk gon na find a script",
 	"you in 2 grades higher than kirby",
 	"kid thinks iq isn't a thing",
