@@ -1,6 +1,7 @@
 local quotes = {
 	"lock in them old hacks ain't it twin",
 	"I am the best 12 yr old player",
+	"gooner ahh age 🥀🥀",
 	"count ur days",
 	"WHAT RHE TGG",
 	"AYO HUZ",
