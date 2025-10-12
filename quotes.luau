@@ -3,6 +3,8 @@ local quotes = {
 	"i believe this is what we call \"ragebait\"",
 	"I am the best 12 yr old player",
 	"lock in them old hacks ain't it twin",
+	"bro talking bout sais meme pas parle anglais en plus 😂",
+	"bro talm bout sun ressort quand je vuex 😂😂",
 	"gooner ahh age 🥀🥀",
 	"count ur days",
 	"WHAT RHE TGG",
