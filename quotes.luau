@@ -2,6 +2,7 @@ local quotes = {
 	"my 5 year old is playing behave.",
 	"stay using hack there",
 	"i believe this is what we call \"ragebait\"",
+	"I wanna know what website it is so i can make a profit off these ##### n escape the matrix",
 	"I am the best 12 yr old player",
 	"lock in them old hacks ain't it twin",
 	"bro talking bout sais meme pas parle anglais en plus 😂",
