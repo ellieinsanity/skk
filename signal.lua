@@ -1,5 +1,9 @@
 -- thread/connection handler
 local localThreads = (getgenv().hasName) and getgenv()[hasName] or threads
+if (not localThreads) then
+	localThreads = {}
+	getgenv().threads = {}
+end
 local function stopThread(thread)
 	if (typeof(thread) == "table") then
 		return stopThread(thread.thread)
