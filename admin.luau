@@ -136,9 +136,9 @@ local function characterAdded(c)
 	local was = wasFlying
 	warn(was)
 	stopFly()
-	if (was) then 
+	if (was) then
 		warn("toggling fly")
-		toggleFly() 
+		toggleFly()
 	else
 		warn("wasnt ever on")
 	end
@@ -189,7 +189,7 @@ toggleFly = function()
 			gyro.Parent = character.PrimaryPart
 			velocity.Parent = character.PrimaryPart
 		end
-		
+
 		api.createSignal(runService.PreRender:connect(function()
 			--humanoid:ChangeState(6)
 			gyro.CFrame = camera.CFrame
@@ -212,19 +212,19 @@ local function findPlayer(player, text)
 	if (api.teams and api.teams[text]) then
 		return api.teams[text]:GetPlayers()
 	end
-	if (text == "me") then return {player} end
+	if (text == "me") or (not text) or (text == "") then return {player} end
 	if (text == "all" or text == "others") then
 		local allPlayers = players:GetPlayers()
 		if (text == "others") then
 			table.remove(allPlayers, table.find(allPlayers, player))
-		end 
+		end
 		return allPlayers
 	end
 	local targets = {}
 	for _,v in players:GetPlayers() do
 		if (v.Name:lower():find(text) or v.DisplayName:lower():find(text)) then
 			table.insert(targets, v)
-		end 
+		end
 	end
 	return targets
 end
@@ -305,7 +305,7 @@ local function addToggle(name, funct, settings)
 		if (not tbl[context.player]) then
 			tbl[context.player] = false
 		end
-		tbl[context.player] = not tbl[context.player] 
+		tbl[context.player] = not tbl[context.player]
 		addLog(("%s is now %s"):format(realName, tbl[context.player] and "on" or "off"), Color3.new(0, 1, 0))
 		local context = table.clone(context)
 		context.on = tbl[context.player]
@@ -442,7 +442,7 @@ createSignal(textBox:GetPropertyChangedSignal("Text"):connect(function()
 		info.label.Visible = localMatched
 		if (info.label.Visible) then
 			currentMatched = localMatched
-		end 
+		end
 	end
 end))
 createSignal(uis.InputBegan:connect(function(key, gpe)
@@ -540,7 +540,7 @@ addToggle("touchfling", function(context)
 		repeat runService.PreRender:wait()
 			resetVelocity(localPlayer.Character)
 			localPlayer.Character:PivotTo(saved)
-		until (character.PrimaryPart.Position - saved.p).magnitude <= 20 
+		until (character.PrimaryPart.Position - saved.p).magnitude <= 20
 	end
 end, { aliases = {"tf"} })
 addPlayerCommand("view", function(context, player)
@@ -549,7 +549,7 @@ addPlayerCommand("view", function(context, player)
 		while task.wait() do
 			if (player.Character) then
 				local humanoid = player.Character:FindFirstChild("Humanoid")
-				if (humanoid) and (player.Character.PrimaryPart) then 
+				if (humanoid) and (player.Character.PrimaryPart) then
 					camera.CameraSubject = player.Character.Humanoid
 				else
 					local hat = player.Character:FindFirstChildWhichIsA("Accoutrement")
@@ -696,7 +696,7 @@ createSignal(runService.RenderStepped:connect(function()
 		if (player.Character and player.Character ~= character) then
 			for _,part in pairs({"Head", "Torso", "HumanoidRootPart"}) do
 				local part = player.Character:FindFirstChild(part)
-				if (part) and (part:IsA("BasePart")) then 
+				if (part) and (part:IsA("BasePart")) then
 					part.AssemblyLinearVelocity = Vector3.new()
 					part.AssemblyAngularVelocity = Vector3.new()
 				end
@@ -709,7 +709,7 @@ local deb = 0
 createSignal(localPlayer.Chatted:connect(function(message)
 	if (message:sub(1, 1) ~= tables.settings.prefix) or (tick() - deb) < 1 then
 		return
-	end 
+	end
 	deb = tick()
 	executeCommand(localPlayer, message)
 end))
