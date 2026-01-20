@@ -1,6 +1,6 @@
 getgenv().hasName = "adminThreads"
 
-local skkVersion = "0.3"
+local skkVersion = "0.5"
 local start = tick()
 
 local players = game:GetService("Players")
