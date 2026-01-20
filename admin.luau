@@ -1,6 +1,6 @@
 getgenv().hasName = "adminThreads"
 
-local skkVersion = "0.5"
+local skkVersion = "0.51"
 local start = tick()
 
 local players = game:GetService("Players")
@@ -32,6 +32,11 @@ local tables = {
 	},
 	toggles = {},
 }
+-- check if any script had reexecute before.
+if (getgenv().onReexecute) then
+    getgenv().onReexecute()
+    getgenv().onReexecute = nil
+end
 -- load gui
 if (coreGui:FindFirstChild("superfehacks")) then
 	coreGui.superfehacks:Destroy()
@@ -334,12 +339,14 @@ local function addThreadCommand(name, funct, settings)
 	end, settings)
 end
 local function addPlayerCommand(name, funct, settings)
-	addCommand(name, function(context, target)
-		local player = findPlayer(context.player, target)[1]
-		if (not player) then
-			return addLog("no player found", Color3.new(1, 0, 0))
+    addCommand(name, function(context, target, ...)
+	    local targets = findPlayer(context.player, target)
+		if (#targets <= 0) then
+		    return addLog("no player found", Color3.new(1, 0, 0))
 		end
-		funct(context, player)
+		for _,v in targets do
+			funct(context, player)
+		end
 	end, settings)
 end
 local function findCommand(name)
