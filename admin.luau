@@ -1,6 +1,6 @@
 getgenv().hasName = "adminThreads"
 
-local skkVersion = "0.51"
+local skkVersion = "0.53"
 local start = tick()
 
 local players = game:GetService("Players")
@@ -46,6 +46,7 @@ gui.Name = "superfehacks"
 gui.DisplayOrder = 9e9
 -- thread/connection handler
 local function stopThread(thread)
+    warn("STOPPING!!!")
 	if (typeof(thread) == "table") then
 		return stopThread(thread.thread)
 	end
@@ -56,6 +57,7 @@ local function stopThread(thread)
 	end
 end
 local function createSignal(connOrThread, name)
+    warn("CREATING!!!")
 	local tbl
 	if (name) then
 		warn("creating signal with name", name)
@@ -65,10 +67,12 @@ local function createSignal(connOrThread, name)
 	end
 	if (tbl) then table.insert(threads, tbl) end
 end
-local function stopSignal(name)
+local function stopSignal(input)
 	for i,v in threads do
-		if (typeof(v) == "table" and v.name == name) then
+	    if (typeof(v) == "table") and (v.name == input) then
 			stopThread(v)
+		elseif (v == input) then
+		    stopThread(v)
 		end
 	end
 end
@@ -80,8 +84,8 @@ local function findSignal(name)
 	end
 end
 
-if (threads) then
-	for _,v in threads do
+if (getgenv().threads) then
+	for _,v in getgenv().threads do
 		stopThread(v)
 	end
 end
@@ -345,7 +349,10 @@ local function addPlayerCommand(name, funct, settings)
 		    return addLog("no player found", Color3.new(1, 0, 0))
 		end
 		for _,v in targets do
-			funct(context, player)
+			local suc, ret = pcall(function()
+			    funct(context, v)
+			end)
+			if (not suc) then warn(ret) end
 		end
 	end, settings)
 end
@@ -397,6 +404,7 @@ logFrame.template.Parent = nil
 Instance.new("UIListLayout", logFrame)
 Instance.new("UIListLayout", suggest)
 function addLog(...)
+    setthreadidentity(7)
 	local args = {...}
 	local str = compString(...)
 	local colorArg = args[#args]
